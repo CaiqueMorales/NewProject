@@ -1,0 +1,69 @@
+/* ======================================== NavBar ======================================== */
+
+/* NavMenu */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--pe-normal);
+}
+
+.nav-menu{
+    display: flex;
+}
+
+
+/* Hamburger Button */
+.hamburger-button{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger-button > * {
+    width: 25px;
+    height: 2px;
+    background-color: var(--clr-neutral-700);
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav-menu{
+        flex-direction: column;
+        position: absolute;
+        inset: 0;
+        width: 70vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--clr-primary-900);
+        transform: translateX(-100%);
+        transition: .2s;
+    }
+
+    .nav-menu.active{
+        transform: translateX(0%);
+    }
+
+    .nav-item:not(:first-of-type){
+        margin-top: 1em;
+    }
+
+    .nav-link{
+        color: var(--clr-neutral-500);
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .hamburger-button{
+        display: none;
+    }
+
+    .nav-item:not(:first-of-type){
+        margin-left: 1em;
+    }
+
+}

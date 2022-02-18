@@ -10,20 +10,15 @@
 :root{
 
     /* Colors */
-    --clr-primary-900: ;
-    --clr-primary-700: ;
-    --clr-primary-500: ;
-    --clr-primary-400: ;
-
-    --clr-secondary-900: ;
-    --clr-secondary-700: ;
-    --clr-secondary-500: ;
-    --clr-secondary-400: ;
+    --clr-primary-900: #003060;
+    --clr-primary-700: #055C9D;
+    --clr-primary-500: #0E86D4;
+    --clr-primary-400: #68BBE3;
     
-    --clr-neutral-900: ;
-    --clr-neutral-700: ;
-    --clr-neutral-500: ;
-    --clr-neutral-400: ;
+    --clr-neutral-900: #000000;
+    --clr-neutral-700: #222831;
+    --clr-neutral-500: #EEEEEE;
+    --clr-neutral-400: #FFFFFF;
 
     /* Typography */
     --fz-larger: 1.953rem;
@@ -43,6 +38,19 @@
     --ff-body: 'Roboto', sans-serif;
     --ff-body-2: 'Poppins', sans-serif;
 
+    /* Sizes */
+    --pe-larger: 10em;
+    --pe-large: 8em;
+    --pe-normal: 6em;
+    --pe-small: 4em;
+    --pe-smaller: 2em;
+
+    --pr-larger: 10rem;
+    --pr-large: 8rem;
+    --pr-normal: 6rem;
+    --pr-small: 4rem;
+    --pr-smaller: 2rem;
+
 }
     
 
@@ -61,6 +69,20 @@ body{
     font-weight: var(--fw-normal);
 }
 
+ul{
+    list-style: none;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -75,10 +97,12 @@ h4{
 
 .container{
     width: min(90%, 70.5rem);
+    margin-inline: auto;
 }
 
 .narrow-container{
     max-width: 40rem;
+    margin-inline: auto;
 }
 
 .split{
