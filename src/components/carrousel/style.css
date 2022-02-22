@@ -5,12 +5,18 @@
     overflow: auto;
     scroll-snap-type: x mandatory;
     border-radius: 1em;
+    position: relative;
 }
 
 .carrousel-button-container{
+    position: relative;
+    bottom: -300px;
+    left: 0;
+    right: 0;
     display: flex;
     justify-content: center;
     padding-block: 2em;
+    z-index: 10;
 }
 
 .carrousel-button:not(:first-of-type){
@@ -18,8 +24,9 @@
 }
 
 .carrousel-button{
-    padding: 1em 3em;
-    border-bottom: 2px solid var(--clr-primary-700);
+    padding: .5em;
+    border-radius: 50%;
+    background-color: #FEFEFE;
     cursor: pointer;
 }
 

@@ -9,8 +9,6 @@ export function Home () {
 
             <div className="home-container container">
 
-                
-
                 <Carrousel />
 
             </div>
