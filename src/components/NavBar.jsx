@@ -15,9 +15,9 @@ export function NavBar () {
 
         <>
         
-            <header id="header" className="header">
-                <nav className="nav container">
-                    <Link to="/">Logo</Link>
+            <header id="header" className="header container">
+                <nav className="nav ">
+                    <Link to="/" className='nav-logo'>Logo</Link>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li onClick={setClickFalse} className="nav-item"><Link to="/" className="nav-link">Home</Link></li>
                         <li onClick={setClickFalse} className="nav-item"><Link to="/" className="nav-link">Home</Link></li>

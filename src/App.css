@@ -70,6 +70,10 @@ body{
     font-weight: var(--fw-normal);
 }
 
+section{
+    padding-block: var(--pe-normal);
+}
+
 ul{
     list-style: none;
 }
