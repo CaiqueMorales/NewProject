@@ -53,6 +53,21 @@
 
 }
     
+@media screen and (max-width: 768px) {
+
+    :root{
+
+        /* Typography */
+        --fz-larger: 1.86rem;
+        --fz-larger: 1.45rem;
+        --fz-large: 1.13rem;
+        --fz-normal: .96rem;
+        --fz-small: 0.7rem;
+        --fz-smaller: 0.54rem;
+
+    }
+
+}
 
 /* ============================== HTML Formating ============================== */
 
@@ -113,7 +128,7 @@ h4{
 .split{
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 4em;
 }
 
 .split > * {
@@ -126,4 +141,8 @@ h4{
         flex-direction: row;
     }
 
+}
+
+.text-center{
+    text-align: center;
 }

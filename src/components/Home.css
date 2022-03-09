@@ -1,4 +1,68 @@
+/* ============================== First Section ============================== */
+
 .first-section{
     background-color: var(--clr-neutral-700);
     min-height: 80vh;
 }
+
+
+/* ============================== Second Section ============================== */
+
+.second-section-titles{
+    margin-bottom: 4em;
+}
+
+.item-container{
+    display: grid;
+    gap: 4em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.item-text > * {
+    color: var(--clr-neutral-700);
+}
+
+@media screen and (max-width: 768px){
+
+    .item-container{
+        gap: 2em;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }   
+
+}
+
+
+/* ============================== Muzan ============================== */
+
+.muzan-container{
+    margin-bottom: 0;
+}
+
+.muzan-titles{
+    margin-bottom: 2em;
+}
+
+.muzan-description{
+    margin-bottom: 1em;
+}
+
+.muzan-img{
+    height: 150%;
+    object-fit: cover;
+    object-position: right;
+    padding-bottom: 6em;
+}
+
+@media screen and (max-width: 768px) {
+
+    .muzan-titles{
+        text-align: center;
+    }
+
+    .muzan-img{
+        padding-bottom: 0;
+        height: 100%;
+    }
+
+} 
+
